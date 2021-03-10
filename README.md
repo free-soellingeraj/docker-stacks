@@ -1,3 +1,15 @@
+# Aaron's scala workspace
+## Instructions
+```
+$ cd all-spark-notebook
+$ nvidia-docker build .
+$ nvidia-docker run -d -p 8901:8888 -p 4040:4040 -p 4041:4041 jupyter/pyspark-notebook start-notebook.sh 
+# To see the token, do 
+docker logs <container hash>
+```
+
+
+
 [![Discourse badge](https://img.shields.io/discourse/https/discourse.jupyter.org/users.svg?color=%23f37626)](https://discourse.jupyter.org/c/questions "Jupyter Discourse Q&A")
 [![Read the Docs badge](https://img.shields.io/readthedocs/jupyter-docker-stacks.svg)](https://jupyter-docker-stacks.readthedocs.io/en/latest/ "Documentation build status")
 [![DockerHub badge](https://images.microbadger.com/badges/version/jupyter/base-notebook.svg)](https://microbadger.com/images/jupyter/base-notebook "Recent tag/version of jupyter/base-notebook")
